@@ -1,46 +1,131 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bingo</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bingo</title>
 
-  <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="reset.css" />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&family=Open+Sans:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
 
-  <div class="container">
+  <body>
+    <div class="container">
+      <section class="mural">
+        <div class="tabela">
+          <div class="coluna col-b">
+            <div class="title title-b">B</div>
+            <div id="n1" class="numero b" onClick="ligaActive(this)">01</div>
+            <div id="n2" class="numero b" onClick="ligaActive(this)">02</div>
+            <div id="n3" class="numero b" onClick="ligaActive(this)">03</div>
+            <div id="n4" class="numero b" onClick="ligaActive(this)">04</div>
+            <div id="n5" class="numero b" onClick="ligaActive(this)">05</div>
+            <div id="n6" class="numero b" onClick="ligaActive(this)">06</div>
+            <div id="n7" class="numero b" onClick="ligaActive(this)">07</div>
+            <div id="n8" class="numero b" onClick="ligaActive(this)">08</div>
+            <div id="n9" class="numero b" onClick="ligaActive(this)">09</div>
+            <div id="n10" class="numero b" onClick="ligaActive(this)">10</div>
+            <div id="n11" class="numero b" onClick="ligaActive(this)">11</div>
+            <div id="n12" class="numero b" onClick="ligaActive(this)">12</div>
+            <div id="n13" class="numero b" onClick="ligaActive(this)">13</div>
+            <div id="n14" class="numero b" onClick="ligaActive(this)">14</div>
+            <div id="n15" class="numero b" onClick="ligaActive(this)">15</div>
+          </div>
 
+          <div class="coluna col-i">
+            <div class="title title-i">I</div>
+            <div id="n16" class="numero i" onClick="ligaActive(this)">16</div>
+            <div id="n17" class="numero i" onClick="ligaActive(this)">17</div>
+            <div id="n18" class="numero i" onClick="ligaActive(this)">18</div>
+            <div id="n19" class="numero i" onClick="ligaActive(this)">19</div>
+            <div id="n20" class="numero i" onClick="ligaActive(this)">20</div>
+            <div id="n21" class="numero i" onClick="ligaActive(this)">21</div>
+            <div id="n22" class="numero i" onClick="ligaActive(this)">22</div>
+            <div id="n23" class="numero i" onClick="ligaActive(this)">23</div>
+            <div id="n24" class="numero i" onClick="ligaActive(this)">24</div>
+            <div id="n25" class="numero i" onClick="ligaActive(this)">25</div>
+            <div id="n26" class="numero i" onClick="ligaActive(this)">26</div>
+            <div id="n27" class="numero i" onClick="ligaActive(this)">27</div>
+            <div id="n28" class="numero i" onClick="ligaActive(this)">28</div>
+            <div id="n29" class="numero i" onClick="ligaActive(this)">29</div>
+            <div id="n30" class="numero i" onClick="ligaActive(this)">30</div>
+          </div>
 
-    <section class="mural">
+          <div class="coluna col-n">
+            <div class="title title-n">N</div>
+            <div id="n31" class="numero n" onClick="ligaActive(this)">31</div>
+            <div id="n32" class="numero n" onClick="ligaActive(this)">32</div>
+            <div id="n33" class="numero n" onClick="ligaActive(this)">33</div>
+            <div id="n34" class="numero n" onClick="ligaActive(this)">34</div>
+            <div id="n35" class="numero n" onClick="ligaActive(this)">35</div>
+            <div id="n36" class="numero n" onClick="ligaActive(this)">36</div>
+            <div id="n37" class="numero n" onClick="ligaActive(this)">37</div>
+            <div id="n38" class="numero n" onClick="ligaActive(this)">38</div>
+            <div id="n39" class="numero n" onClick="ligaActive(this)">39</div>
+            <div id="n40" class="numero n" onClick="ligaActive(this)">40</div>
+            <div id="n41" class="numero n" onClick="ligaActive(this)">41</div>
+            <div id="n42" class="numero n" onClick="ligaActive(this)">42</div>
+            <div id="n43" class="numero n" onClick="ligaActive(this)">43</div>
+            <div id="n44" class="numero n" onClick="ligaActive(this)">44</div>
+            <div id="n45" class="numero n" onClick="ligaActive(this)">45</div>
+          </div>
 
-      <h1>Bingo</h1>
+          <div class="coluna col-g">
+            <div class="title title-g">G</div>
+            <div id="n46" class="numero g" onClick="ligaActive(this)">46</div>
+            <div id="n47" class="numero g" onClick="ligaActive(this)">47</div>
+            <div id="n48" class="numero g" onClick="ligaActive(this)">48</div>
+            <div id="n49" class="numero g" onClick="ligaActive(this)">49</div>
+            <div id="n50" class="numero g" onClick="ligaActive(this)">50</div>
+            <div id="n51" class="numero g" onClick="ligaActive(this)">51</div>
+            <div id="n52" class="numero g" onClick="ligaActive(this)">52</div>
+            <div id="n53" class="numero g" onClick="ligaActive(this)">53</div>
+            <div id="n54" class="numero g" onClick="ligaActive(this)">54</div>
+            <div id="n55" class="numero g" onClick="ligaActive(this)">55</div>
+            <div id="n56" class="numero g" onClick="ligaActive(this)">56</div>
+            <div id="n57" class="numero g" onClick="ligaActive(this)">57</div>
+            <div id="n58" class="numero g" onClick="ligaActive(this)">58</div>
+            <div id="n59" class="numero g" onClick="ligaActive(this)">59</div>
+            <div id="n60" class="numero g" onClick="ligaActive(this)">60</div>
+          </div>
 
-      <div class="tabela">
+          <div class="coluna col-o">
+            <div class="title title-o">O</div>
+            <div id="n61" class="numero o" onClick="ligaActive(this)">61</div>
+            <div id="n62" class="numero o" onClick="ligaActive(this)">62</div>
+            <div id="n63" class="numero o" onClick="ligaActive(this)">63</div>
+            <div id="n64" class="numero o" onClick="ligaActive(this)">64</div>
+            <div id="n65" class="numero o" onClick="ligaActive(this)">65</div>
+            <div id="n66" class="numero o" onClick="ligaActive(this)">66</div>
+            <div id="n67" class="numero o" onClick="ligaActive(this)">67</div>
+            <div id="n68" class="numero o" onClick="ligaActive(this)">68</div>
+            <div id="n69" class="numero o" onClick="ligaActive(this)">69</div>
+            <div id="n70" class="numero o" onClick="ligaActive(this)">70</div>
+            <div id="n71" class="numero o" onClick="ligaActive(this)">71</div>
+            <div id="n72" class="numero o" onClick="ligaActive(this)">72</div>
+            <div id="n73" class="numero o" onClick="ligaActive(this)">73</div>
+            <div id="n74" class="numero o" onClick="ligaActive(this)">74</div>
+            <div id="n75" class="numero o" onClick="ligaActive(this)">75</div>
+          </div>
+        </div>
+      </section>
 
-      </div>
-    </section>
+      <section class="lateral">
+        <input id="inputNumero" type="number" placeholder="Número" min="1" max="75" />
+        <button id="btnAdicionar">Enter</button>
+        <button id="btnZerar">Zerar</button>
+      </section>
+    </div>
 
-
-    <section class="lateral">
-      <div class="botao-direita">
-        <button id="zerar">Zerar</button>
-      </div>
-      <input type="text" placeholder="Número">
-      <button>Enter</button>
-    </section>
-
-
-  </div>
-
-<script type="text/javascript" src="script.js"></script>
-</body>
+    <script type="text/javascript" src="script.js"></script>
+  </body>
 </html>

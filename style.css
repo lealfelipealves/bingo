@@ -1,67 +1,110 @@
+* {
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Montserrat', sans-serif;
-
-  background-color: rgb(216, 216, 216);
-
-  height: 100vh;
-
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-h1 {
-  font-size: 4rem;
-  margin-bottom: 50px;
+  height: 100vh;
 }
 
 .container {
   display: flex;
-  justify-content: space-around;
+  flex-direction: column;
   align-items: center;
 
   background-color: white;
   width: 80%;
-  height: 80vh;
+  padding-top: 110px;
 }
 
-.mural {
+
+#inputNumero {
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  
+  border: 1px solid gainsboro;
+}
+
+#btnAdicionar, #btnZerar {
+  padding: 1rem;
+  width: 100%;
+  margin-bottom: .5rem;
+  border: 0;
+  border-radius: 8px;
+  text-transform: uppercase;
+}
+
+#btnAdicionar {
+  background-color: green;
+}
+#btnZerar {
+  background-color: darkgrey;
+
+}
+
+
+.tabela {
+  display: flex;
+  flex-direction: row;
+
+  margin-bottom: 30px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.numero {
+  margin: .5rem;
+  padding: .5rem;
+  border-radius: 20px;
+  background-color: darkgrey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.b.active {
   background-color: red;
 }
-
-.coluna {
-  display: flex;
-  flex-direction: column;
+.i.active {
+  background-color: blue;
+}
+.n.active {
+  background-color: fuchsia;
+}
+.g.active {
+  background-color: green;
+}
+.o.active {
+  background-color: tomato;
 }
 
-.lateral {
-  display: flex;
-  flex-direction: column;
-}
+@media screen and (min-width: 769px) {
+  .container {
+    flex-direction: row;
 
-.botao-direita {
-  display: flex;
-  justify-content: flex-end;
-  margin-bottom: 100px;
-}
+    justify-content: space-around;
+    
+    height: 80vh;
+    padding-top: 0;
+  }
 
-input {
-  border: none;
-  height: 25px;
-  background-color: rgb(223, 223, 223);
-
-  margin-bottom: 10px;
-}
-
-button {
-  border: none;
-  border-radius: 7px;
-  background-color: rgb(46, 192, 46);
-
-  padding: 8px;
-}
-
-button#zerar {
-  width: 50px;
-  height: 50px;
+  .tabela {
+    margin-bottom: 0;
+  }
 }

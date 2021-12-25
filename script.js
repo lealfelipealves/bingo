@@ -19,7 +19,14 @@ inputNumero.addEventListener("keyup", function(event) {
 btnAdicionar.onclick = function () {
   const numero = inputNumero.value;  
   const elemento = document.getElementById(`n${numero}`);
-  elemento.classList.add("active");
+  const isActive = elemento.classList.contains("active")
+
+  if (isActive) {
+    elemento.classList.remove("active");
+  } else {    
+    elemento.classList.add("active");
+  }
+
   inputNumero.value = ''
   inputNumero.focus();
 };
@@ -31,10 +38,13 @@ btnZerar.onclick = function () {
   });
 }
 
-
-
 function ligaActive(obj) {
-  document.getElementById(`${obj.id}`).classList.add("active");
+  const isActive = obj.classList.contains("active")
+  if (isActive) {
+    document.getElementById(`${obj.id}`).classList.remove("active");
+  } else {    
+    document.getElementById(`${obj.id}`).classList.add("active");
+  }
 }
 
 const onClick = (event) => {
@@ -42,10 +52,18 @@ const onClick = (event) => {
     console.log(event.target.id);
   }
 }
+
 window.addEventListener('click', onClick);
 
+/*
 document.querySelectorAll(".numero").onclick = function () {
   [].forEach.call(numeros, function(el) {
-    el.classList.add("active");
+    const isActive = el.classList.contains("active")
+    console.log(isActive);
+    if (isActive) {
+      el.classList.remove("active");
+    } else {    
+      el.classList.add("active");
+    }
   });
-}
+}*/

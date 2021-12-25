@@ -12,16 +12,14 @@ body {
   justify-content: center;
   align-items: center;
   height: 100vh;
+  background-color: rgb(146, 212, 151);
 }
 
 .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-
-  background-color: white;
   width: 80%;
-  padding-top: 110px;
 }
 
 
@@ -65,33 +63,45 @@ body {
   align-items: center;
   justify-content: center;
   font-weight: bold;
+  margin-bottom: 1rem;
+  font-size: 5rem;
+}
+
+.coluna {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-right: 2rem;
+} 
+
+.numeros {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 50%;
+  width: 100px;
 }
 
 .numero {
   margin: .5rem;
   padding: .5rem;
   border-radius: 20px;
-  background-color: darkgrey;
+  background-color: rgba(217,217,217,0.53);
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
 }
 
-.b.active {
-  background-color: red;
+.active {
+  background-color: rgb(223, 17, 17);
+  font-weight: bold;
+  color: white;
 }
-.i.active {
-  background-color: blue;
-}
-.n.active {
-  background-color: fuchsia;
-}
-.g.active {
-  background-color: green;
-}
-.o.active {
-  background-color: tomato;
+
+button {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 769px) {
